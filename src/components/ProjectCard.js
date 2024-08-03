@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, imgUrl, gitLink }) => {
+export const ProjectCard = ({ title, description, imgUrl, gitLink,isLive,liveLink }) => {
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
@@ -29,6 +29,26 @@ export const ProjectCard = ({ title, description, imgUrl, gitLink }) => {
           >
             git
           </a>
+          {isLive && <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              backgroundColor: "red",
+              color: "white",
+              border: "none",
+              padding: "10px 20px",
+              textAlign: "center",
+              textDecoration: "none",
+              display: "inline-block",
+              fontSize: "16px",
+              margin: "4px 2px",
+              cursor: "pointer",
+              borderRadius: "4px",
+            }}
+          >
+            Live
+          </a>}
         </div>
       </div>
     </Col>

@@ -5,12 +5,38 @@ import { ProjectCard } from './ProjectCard';
 import projImg1 from '../assets/img/Sample.png';
 import projImg2 from '../assets/img/Supermarket_System_Sample.png';
 import colorSharp2 from '../assets/img/color-sharp2.png'; // Import the image
-
+import Youtube_Clone from '../assets/img/Youtube_Clone.png'
+import path_finding from '../assets/img/Path-finding.png'
+import password_manager from "../assets/img/Password-Manager.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
   const projects = [
+    {
+      title: 'Youtube Clone',
+      description: 'ReactJS',
+      imgUrl: Youtube_Clone,
+      gitLink: 'https://github.com/MitBhardiwala/Youtube-Clone',
+      isLive:true,
+      liveLink:"https://youtube-clone-lake-three.vercel.app/"
+    },
+    {
+      title: 'Path-Finding Visualizer',
+      description: 'ReactJS',
+      imgUrl: path_finding,
+      gitLink: 'https://github.com/MitBhardiwala/path-finding-visualizer',
+      isLive:true,
+      liveLink:"https://path-finding-visualizer-five.vercel.app/"
+    },
+    {
+      title: 'Password Manager',
+      description: 'ReactJS Express MongoDB',
+      imgUrl: password_manager,
+      gitLink: 'https://github.com/MitBhardiwala/Password-Manager',
+      isLive:true,
+      liveLink:"https://667aabb777c76a05ff7c58a6--dainty-alfajores-e70f25.netlify.app/"
+    },
     {
       title: 'Movie Recommender System',
       description: 'Machine Learning',
@@ -23,6 +49,7 @@ export const Projects = () => {
       imgUrl: projImg2,
       gitLink: 'https://github.com/MitBhardiwala/SuperMarket-Management-System',
     },
+    
   ];
 
   return (
