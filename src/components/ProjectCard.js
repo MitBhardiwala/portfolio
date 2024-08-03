@@ -34,7 +34,7 @@ export const ProjectCard = ({ title, description, imgUrl, gitLink,isLive,liveLin
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              backgroundColor: "red",
+              backgroundColor: "green",
               color: "white",
               border: "none",
               padding: "10px 20px",
