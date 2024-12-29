@@ -161,7 +161,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 //contact form control
 
 document.getElementById("contact-form").addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent default form submission behavior
+  event.preventDefault(); // Prevent default form submission behaviort
   const form = event.target;
   // Send form data using Formspree
   fetch("https://formspree.io/f/xgvvydad", {
